@@ -1,0 +1,15 @@
+/* Tinggi minimal hero agar layar penuh */
+.hero {
+  min-height: 90vh;
+  background: linear-gradient(180deg, #FFFFFF 0%, #E6F0FF 100%);
+}
+
+/* Supaya footer nempel bawah dengan rapi */
+body, html {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+footer {
+  margin-top: auto;
+}
