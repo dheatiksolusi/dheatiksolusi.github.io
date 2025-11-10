@@ -7,8 +7,6 @@
   <meta name="description" content="Template website profesional untuk pelaku UMKM — desain modern, cepat, dan responsif.">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/style.css">
-
-  <!-- Smooth Scroll + Animation -->
   <style>
     html { scroll-behavior: smooth; }
     [data-animate] {
@@ -30,10 +28,9 @@
       <h1 class="logo">Dheatik Template</h1>
       <nav>
         <ul>
-          <li><a href="#home">Beranda</a></li>
+          <li><a href="#home" class="active">Beranda</a></li>
           <li><a href="#about">Tentang</a></li>
           <li><a href="#produk">Produk</a></li>
-          <li><a href="#galeri">Galeri</a></li>
           <li><a href="#testimoni">Testimoni</a></li>
           <li><a href="#kontak">Kontak</a></li>
         </ul>
@@ -43,18 +40,14 @@
   </header>
 
   <!-- Hero -->
-  <section id="home" class="hero" data-animate>
-    <div class="container flex">
-      <div class="text">
-        <h2>Bangun Identitas Digital Bisnismu 🚀</h2>
-        <p>Website profesional untuk pelaku UMKM dan usaha lokal. Desain modern, cepat, dan mudah digunakan.</p>
-        <div class="hero-buttons">
-          <a href="#produk" class="btn-primary">Lihat Produk</a>
-          <a href="#kontak" class="btn-outline">Hubungi Kami</a>
-        </div>
-      </div>
-      <div class="img">
-        <img src="assets/img/hero.jpg" alt="Hero Dheatik Template">
+  <section id="home" class="hero text-center" data-animate>
+    <div class="container">
+      <h2>Produk Berkualitas untuk Kebutuhan Anda</h2>
+      <p>Temukan berbagai produk pilihan dari UMKM lokal dengan kualitas terbaik dan harga terjangkau.<br>
+      Dukung produk lokal, bangga buatan Indonesia!</p>
+      <div class="hero-buttons">
+        <a href="#produk" class="btn-primary">Lihat Produk →</a>
+        <a href="https://wa.me/6281234567890" class="btn-outline">Hubungi WhatsApp</a>
       </div>
     </div>
   </section>
@@ -173,13 +166,34 @@
   </footer>
 
   <script>
+    // Animasi muncul saat scroll
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) entry.target.classList.add('show');
       });
     }, { threshold: 0.15 });
-
     document.querySelectorAll('[data-animate]').forEach(el => observer.observe(el));
+
+    // Highlight menu aktif
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.navbar nav ul li a');
+
+    window.addEventListener('scroll', () => {
+      let current = '';
+      sections.forEach(section => {
+        const sectionTop = section.offsetTop - 100;
+        if (scrollY >= sectionTop) current = section.getAttribute('id');
+      });
+
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href').includes(current)) link.classList.add('active');
+      });
+
+      // Navbar blur efek
+      const nav = document.querySelector('.navbar');
+      nav.classList.toggle('scrolled', window.scrollY > 10);
+    });
   </script>
 
 </body>
