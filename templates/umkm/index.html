@@ -4,100 +4,84 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Template UMKM | Dheatik Solusi</title>
-  <meta name="description" content="Template website profesional untuk pelaku UMKM — desain modern, ringan, dan responsif.">
-  <link rel="stylesheet" href="assets/css/style.css">
+  <meta name="description" content="Template website UMKM modern, responsif, dan profesional dari Dheatik Solusi. Cocok untuk toko online, jasa, dan usaha lokal.">
+  <link rel="stylesheet" href="assets/css/style.css?v=2.0">
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-  <!-- Navbar -->
+  <!-- Header -->
   <header class="navbar">
-    <div class="container">
+    <div class="container nav-flex">
       <h1 class="logo">Dheatik Template</h1>
-      <nav>
-        <ul>
-          <li><a href="#home">Beranda</a></li>
-          <li><a href="#about">Tentang</a></li>
-          <li><a href="#produk">Produk</a></li>
-          <li><a href="#galeri">Galeri</a></li>
-          <li><a href="#testimoni">Testimoni</a></li>
-          <li><a href="#kontak">Kontak</a></li>
-        </ul>
+      <input type="checkbox" id="menu-toggle">
+      <label for="menu-toggle" class="menu-icon">☰</label>
+      <nav class="nav-menu">
+        <a href="#home">Beranda</a>
+        <a href="#about">Tentang</a>
+        <a href="#produk">Produk</a>
+        <a href="#testimoni">Testimoni</a>
+        <a href="#kontak">Kontak</a>
       </nav>
-      <a href="#kontak" class="btn-primary">Pesan Sekarang</a>
     </div>
   </header>
 
   <!-- Hero -->
   <section id="home" class="hero">
-    <div class="container text-center">
-      <h2>Produk Berkualitas untuk Kebutuhan Anda</h2>
-      <p>Temukan produk unggulan dari UMKM lokal dengan harga terjangkau dan kualitas terbaik. Dukung produk lokal, bangga buatan Indonesia 🇮🇩</p>
-      <div class="hero-buttons">
-        <a href="#produk" class="btn-primary">Lihat Produk</a>
-        <a href="https://wa.me/6281234567890" target="_blank" class="btn-outline">Hubungi WhatsApp</a>
+    <div class="container hero-content">
+      <div class="hero-text">
+        <h2>Bangun Identitas Digital Bisnismu 🚀</h2>
+        <p>Website profesional untuk pelaku UMKM dan usaha lokal. Desain modern, cepat, dan mudah digunakan.</p>
+        <div class="hero-buttons">
+          <a href="#produk" class="btn-primary">Lihat Produk</a>
+          <a href="#kontak" class="btn-outline">Hubungi Kami</a>
+        </div>
+      </div>
+      <div class="hero-img">
+        <img src="https://i.imgur.com/lZ4b4pY.png" alt="Ilustrasi bisnis digital">
       </div>
     </div>
   </section>
 
   <!-- Tentang -->
   <section id="about" class="about">
-    <div class="container flex">
+    <div class="container about-flex">
+      <div class="about-img">
+        <img src="https://i.imgur.com/zyO5cIw.png" alt="Tentang Kami">
+      </div>
       <div class="about-text">
-        <h3>Tentang Toko Kami</h3>
-        <p>Kami adalah UMKM lokal yang berkomitmen menyediakan produk berkualitas tinggi untuk kebutuhan Anda. Setiap produk dibuat dengan penuh perhatian dan dedikasi untuk memberikan kepuasan maksimal.</p>
+        <h3>Tentang Kami</h3>
+        <p>Kami berkomitmen membantu UMKM naik kelas melalui solusi digital yang mudah diakses dan terjangkau. Semua desain kami dibuat dengan fokus pada kecepatan, kenyamanan, dan tampilan profesional.</p>
         <ul>
-          <li>✅ Produk berkualitas tinggi & harga terjangkau</li>
-          <li>✅ Pengiriman cepat ke seluruh Indonesia</li>
-          <li>✅ Pelayanan ramah dan responsif</li>
+          <li>💡 Desain modern dan mudah diatur</li>
+          <li>⚙️ Kinerja cepat di semua perangkat</li>
+          <li>🧩 Dapat disesuaikan untuk berbagai jenis usaha</li>
         </ul>
       </div>
-      <div class="about-img">ABOUT</div>
     </div>
   </section>
 
   <!-- Produk -->
   <section id="produk" class="produk">
     <div class="container text-center">
-      <h3>Produk Pilihan Kami</h3>
-      <p>Berbagai produk berkualitas untuk memenuhi kebutuhan Anda</p>
+      <h3>Produk Unggulan</h3>
+      <p class="subtext">Berbagai pilihan layanan untuk mengembangkan bisnis Anda</p>
       <div class="produk-grid">
         <div class="card">
-          <div class="card-img">PRODUK</div>
-          <h4>Produk Premium 1</h4>
-          <p class="harga">Rp 150.000</p>
-          <p>Produk berkualitas tinggi dengan bahan terbaik</p>
-          <a href="#" class="btn-primary small">Pesan Sekarang</a>
+          <img src="https://i.imgur.com/G4PybXx.png" alt="Website UMKM">
+          <h4>Pembuatan Website</h4>
+          <p>Buat website profesional untuk usaha Anda mulai dari Rp500rb.</p>
         </div>
         <div class="card">
-          <div class="card-img">PRODUK</div>
-          <h4>Produk Premium 2</h4>
-          <p class="harga">Rp 200.000</p>
-          <p>Desain eksklusif dan elegan untuk gaya hidup modern</p>
-          <a href="#" class="btn-primary small">Pesan Sekarang</a>
+          <img src="https://i.imgur.com/v3W4BPy.png" alt="Desain Branding">
+          <h4>Desain Branding</h4>
+          <p>Logo dan identitas visual menarik agar bisnis Anda lebih dikenal.</p>
         </div>
         <div class="card">
-          <div class="card-img">PRODUK</div>
-          <h4>Produk Favorit</h4>
-          <p class="harga">Rp 125.000</p>
-          <p>Produk terlaris dengan ulasan positif pelanggan</p>
-          <a href="#" class="btn-primary small">Pesan Sekarang</a>
+          <img src="https://i.imgur.com/nm8KHsQ.png" alt="Konsultasi IT">
+          <h4>Konsultasi IT</h4>
+          <p>Dapatkan panduan untuk digitalisasi bisnis dan efisiensi sistem.</p>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- Galeri -->
-  <section id="galeri" class="galeri">
-    <div class="container text-center">
-      <h3>Galeri Produk</h3>
-      <div class="galeri-grid">
-        <div class="box">Koleksi Premium</div>
-        <div class="box">Produk Favorit</div>
-        <div class="box">Edisi Spesial</div>
-        <div class="box">Paket Hemat</div>
-        <div class="box">Koleksi Terbaru</div>
-        <div class="box">Pilihan Pelanggan</div>
       </div>
     </div>
   </section>
@@ -108,16 +92,12 @@
       <h3>Testimoni Klien</h3>
       <div class="testi-grid">
         <div class="testi-card">
-          <p>"Produknya bagus banget! Kualitas terjamin dengan harga terjangkau. Pasti order lagi!"</p>
-          <strong>Ibu Sari</strong><br><small>Pelanggan Setia</small>
+          <p>“Pelayanan cepat dan hasilnya profesional banget. Website saya langsung terlihat keren!”</p>
+          <strong>— Ibu Sari, Pemilik Toko Sari Rasa</strong>
         </div>
         <div class="testi-card">
-          <p>"Pengiriman cepat dan produk sesuai ekspektasi, bahkan lebih bagus dari foto!"</p>
-          <strong>Pak Budi</strong><br><small>Pembeli</small>
-        </div>
-        <div class="testi-card">
-          <p>"Langganan beli di sini. Selalu puas dengan kualitas dan pelayanannya!"</p>
-          <strong>Dina Wijaya</strong><br><small>Reseller</small>
+          <p>“Desainnya responsif dan ringan diakses di HP. Klien saya pun lebih mudah melihat produk saya.”</p>
+          <strong>— Pak Budi, UMKM Batik Ciamis</strong>
         </div>
       </div>
     </div>
@@ -127,21 +107,8 @@
   <section id="kontak" class="kontak">
     <div class="container text-center">
       <h3>Hubungi Kami</h3>
-      <p>Tertarik dengan produk kami? Hubungi kami sekarang untuk informasi lebih lanjut.</p>
-      <div class="kontak-grid">
-        <div>
-          <h4>Email</h4>
-          <p>order@dheatiksolusi.my.id</p>
-        </div>
-        <div>
-          <h4>WhatsApp</h4>
-          <p><a href="https://wa.me/6281234567890" target="_blank">+62 812-3456-7890</a></p>
-        </div>
-        <div>
-          <h4>Lokasi</h4>
-          <p>Ciamis, Jawa Barat</p>
-        </div>
-      </div>
+      <p>Konsultasi gratis untuk membantu bisnis Anda tumbuh di dunia digital 🌐</p>
+      <a href="https://wa.me/6281234567890" target="_blank" class="btn-primary">Chat via WhatsApp</a>
     </div>
   </section>
 
@@ -150,24 +117,22 @@
     <div class="container footer-flex">
       <div>
         <h4>Dheatik Solusi</h4>
-        <p>Template profesional buatan lokal untuk kebutuhan digital Anda.</p>
+        <p>IT Solutions for Stability — mendukung UMKM naik kelas dengan layanan digital profesional.</p>
       </div>
       <div>
-        <h4>Quick Links</h4>
+        <h4>Navigasi</h4>
         <ul>
           <li><a href="#about">Tentang</a></li>
           <li><a href="#produk">Produk</a></li>
-          <li><a href="#galeri">Galeri</a></li>
           <li><a href="#kontak">Kontak</a></li>
         </ul>
       </div>
       <div>
-        <h4>Follow Kami</h4>
+        <h4>Media Sosial</h4>
         <div class="socials">
           <a href="#">🌐</a>
           <a href="#">📘</a>
           <a href="#">📷</a>
-          <a href="#">💼</a>
         </div>
       </div>
     </div>
@@ -176,4 +141,3 @@
 
 </body>
 </html>
-
