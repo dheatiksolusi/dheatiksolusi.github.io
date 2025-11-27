@@ -3,45 +3,171 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Apa Itu Transformasi Digital untuk UMKM?</title>
-    <link rel="stylesheet" href="../style.css">
+    <title>Apa Itu Transformasi Digital untuk UMKM? — Dheatik Solusi</title>
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <style>
-        body { background: #f8fafc; }
-        .article-container {
-            max-width: 800px;
-            margin: 80px auto;
-            padding: 20px;
-            background: white;
-            border-radius: 12px;
-            border: 1px solid #e5e7eb;
+        body {
+            background: #F2F4F8;
+            font-family: 'Poppins', sans-serif;
+            color: #0A285F;
         }
-        h1 { color: #0f172a; }
-        p { color: #475569; line-height: 1.7; }
-        a { color:#1e3a8a; font-weight:600; }
+
+        /* Navbar */
+        .navbar {
+            padding: 15px 0;
+            background: white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+        .nav-link {
+            font-weight: 600;
+            margin-right: 20px;
+        }
+        .nav-link:hover {
+            color: #2D8CFF !important;
+        }
+        .navbar-brand img {
+            height: 42px;
+            margin-right: 8px;
+        }
+
+        /* Header artikel */
+        .article-header {
+            padding: 110px 20px 40px;
+            text-align: center;
+        }
+        .article-header h1 {
+            font-size: 34px;
+            font-weight: 700;
+            color: #0A285F;
+        }
+        .article-date {
+            color: #64748B;
+            font-size: 15px;
+            margin-top: 10px;
+        }
+
+        /* Card isi artikel */
+        .article-card {
+            background: white;
+            border-radius: 20px;
+            padding: 35px 35px;
+            border: 1px solid #e5e7eb;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+        }
+        .article-card p, 
+        .article-card li {
+            color: #475569;
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+        /* Breadcrumb */
+        .breadcrumb-custom {
+            font-size: 14px;
+            margin-bottom: 25px;
+        }
+        .breadcrumb-custom a {
+            color: #1E3A8A;
+            text-decoration: none;
+            font-weight: 500;
+        }
+        .breadcrumb-custom span {
+            color: #64748B;
+        }
+
+        footer {
+            background: #0A285F;
+            padding: 20px;
+            text-align: center;
+            margin-top: 60px;
+        }
+        footer p {
+            color: white;
+            margin: 0;
+        }
     </style>
 </head>
+
 <body>
 
-<header>
-    <!-- Copy navbar dari index.html -->
-</header>
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold d-flex align-items-center" href="../index.html">
+      <img src="../logo.png" alt="Logo Dheatik Solusi">
+      Dheatik Solusi
+    </a>
 
-<div class="article-container">
+    <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav align-items-lg-center">
+        <li class="nav-item"><a href="../index.html" class="nav-link text-dark">Beranda</a></li>
+        <li class="nav-item"><a href="../layanan.html" class="nav-link text-dark">Layanan</a></li>
+        <li class="nav-item"><a href="../portofolio.html" class="nav-link text-dark">Portofolio</a></li>
+        <li class="nav-item"><a href="../tentang.html" class="nav-link text-dark">Tentang Kami</a></li>
+        <li class="nav-item"><a href="../kontak.html" class="nav-link text-dark">Kontak</a></li>
+        <li class="nav-item"><a href="index.html" class="nav-link text-primary fw-bold">Blog</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- HEADER ARTIKEL -->
+<section class="article-header">
     <h1>Apa Itu Transformasi Digital untuk UMKM?</h1>
-    <p><i>Dipublikasikan: 26 November 2025</i></p>
+    <div class="article-date">Dipublikasikan: 26 November 2025</div>
+</section>
 
-    <p>Transformasi digital adalah proses menggunakan teknologi untuk meningkatkan operasional bisnis, pemasaran, dan pelayanan kepada pelanggan...</p>
+<!-- ISI ARTIKEL -->
+<div class="container" style="max-width: 850px;">
+    
+    <!-- breadcrumb -->
+    <div class="breadcrumb-custom">
+        <a href="index.html">Blog</a> <span> / Apa Itu Transformasi Digital</span>
+    </div>
 
-    <p>Contohnya:</p>
-    <ul>
-        <li>Website profesional</li>
-        <li>Sistem kasir digital</li>
-        <li>Media sosial & marketing online</li>
-        <li>Otomasi administrasi</li>
-    </ul>
+    <div class="article-card">
 
-    <p><a href="index.html">← Kembali ke Blog</a></p>
+        <p>
+            Transformasi digital adalah proses menggunakan teknologi untuk meningkatkan operasional bisnis,
+            pemasaran, dan pelayanan kepada pelanggan. UMKM yang menerapkan digitalisasi cenderung lebih efisien,
+            mudah berkembang, dan mampu bersaing dengan pasar modern.
+        </p>
+
+        <p>Contohnya:</p>
+
+        <ul>
+            <li>Website profesional</li>
+            <li>Sistem kasir digital</li>
+            <li>Media sosial & marketing online</li>
+            <li>Otomasi administrasi</li>
+        </ul>
+
+        <br>
+
+        <a href="index.html" style="color:#1E3A8A; font-weight:600; text-decoration:none;">
+            ← Kembali ke Blog
+        </a>
+
+    </div>
+
 </div>
+
+<!-- FOOTER -->
+<footer>
+    <p>&copy; 2025 Dheatik Solusi — Solusi IT Profesional Indonesia.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
