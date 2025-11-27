@@ -6,56 +6,106 @@
     <title>Blog Teknologi — Dheatik Solusi</title>
     <link rel="stylesheet" href="../style.css">
     <style>
-        body { background: #f8fafc; }
-        .blog-container {
-            max-width: 900px;
-            margin: 80px auto;
-            padding: 20px;
+        body {
+            background: #f4f6f9;
+            font-family: 'Inter', sans-serif;
         }
-        .post-card {
-            background: white;
-            padding: 25px;
-            border-radius: 12px;
-            margin-bottom: 25px;
-            border: 1px solid #e5e7eb;
-            transition: 0.2s;
+
+        .blog-header {
+            text-align: center;
+            margin-top: 120px;
         }
-        .post-card:hover {
-            transform: translateY(-3px);
-            border-color: #1e3a8a;
-        }
-        .post-card h2 {
-            margin: 0;
+
+        .blog-header h1 {
+            font-size: 2.2rem;
             color: #0f172a;
-            font-size: 22px;
+            font-weight: 700;
         }
-        .post-card p { margin: 10px 0; color: #475569; }
-        .post-card a {
+
+        .blog-header p {
+            color: #475569;
+            margin-top: 5px;
+        }
+
+        .blog-container {
+            max-width: 950px;
+            margin: 40px auto 100px;
+            padding: 0 20px;
+        }
+
+        .post-card {
+            background: #fff;
+            padding: 25px 30px;
+            border-radius: 16px;
+            margin-bottom: 30px;
+            border: 1px solid #e2e8f0;
+            box-shadow: 0 3px 12px rgba(0,0,0,0.05);
+            transition: 0.25s ease;
+        }
+
+        .post-card:hover {
+            transform: translateY(-5px);
+            border-color: #1e3a8a;
+            box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+        }
+
+        .post-card h2 a {
             color: #1e3a8a;
-            font-weight: 600;
             text-decoration: none;
+            font-size: 1.4rem;
         }
-        .post-card a:hover { text-decoration: underline; }
+
+        .post-card p {
+            margin-top: 8px;
+            color: #475569;
+        }
+
+        .post-date {
+            margin-top: 12px;
+            font-size: 0.85rem;
+            color: #64748b;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .post-card {
+                padding: 20px;
+            }
+            .blog-header h1 {
+                font-size: 1.8rem;
+            }
+        }
     </style>
 </head>
+
 <body>
 
-    <header>
-        <!-- Copy navbar dari index.html kamu -->
+    <!-- Navbar -->
+    <header style="position: fixed; width: 100%; background: white; top: 0; left: 0; padding: 20px 40px; border-bottom: 1px solid #e2e8f0; z-index: 10;">
+        <nav style="display: flex; gap: 25px; font-weight: 600;">
+            <a href="../index.html">Beranda</a>
+            <a href="../layanan.html">Layanan</a>
+            <a href="../portofolio.html">Portofolio</a>
+            <a href="../tentang.html">Tentang Kami</a>
+            <a href="../kontak.html">Kontak</a>
+            <a href="index.html" style="color: #1e3a8a;">Blog</a>
+        </nav>
     </header>
 
-    <div class="blog-container">
+    <div class="blog-header">
         <h1>Artikel & Informasi Teknologi</h1>
-        <p style="color:#475569;">Update seputar teknologi, IT, keamanan, dan digitalisasi bisnis.</p>
+        <p>Update seputar teknologi, IT, keamanan, dan digitalisasi bisnis.</p>
+    </div>
 
-        <!-- Artikel 1 -->
+    <div class="blog-container">
+
+        <!-- Card Artikel 1 -->
         <div class="post-card">
             <h2><a href="artikel-1.html">Apa Itu Transformasi Digital untuk UMKM?</a></h2>
-            <p>Memahami bagaimana UMKM bisa berkembang melalui digitalisasi.</p>
-            <small>Dipublikasikan: 26 November 2025</small>
+            <p>Memahami bagaimana UMKM bisa berkembang melalui digitalisasi dan automasi sistem modern.</p>
+            <div class="post-date">Dipublikasikan: 26 November 2025</div>
         </div>
 
-        <!-- Tambahkan post berikutnya disini -->
     </div>
 
 </body>
