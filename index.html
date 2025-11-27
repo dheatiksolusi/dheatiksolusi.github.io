@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Dheatik Solusi | IT Solutions for Stability</title>
+  <title>Dheatik Solusi | Solusi IT Profesional Indonesia</title>
   <meta name="description" content="Dheatik Solusi menyediakan layanan pembuatan website, maintenance server, dan IT support profesional untuk UMKM, sekolah, dan instansi.">
-  <meta name="keywords" content="Dheatik Solusi, IT Support, Website, Maintenance Server, Konsultasi IT, Digital Solution, UMKM, Sekolah, Pemerintah">
+  <meta name="keywords" content="IT Support, Website, Server, Konsultasi IT, UMKM, Sekolah, Pemerintah, Dheatik Solusi">
   <meta name="author" content="Dheatik Solusi">
 
   <!-- Favicon -->
@@ -20,7 +20,7 @@
   <!-- Bootstrap Icons -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 
-  <!-- AOS Animation -->
+  <!-- AOS -->
   <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
 
   <style>
@@ -29,16 +29,15 @@
       background-color: #F8FAFC;
       color: #0A285F;
       overflow-x: hidden;
-      scroll-behavior: smooth;
     }
 
     /* Navbar */
     .navbar {
-      transition: all 0.4s ease;
+      transition: 0.4s;
       padding: 15px 0;
     }
     .navbar.scrolled {
-      background-color: #ffffff;
+      background: white !important;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
     .navbar-brand img {
@@ -48,58 +47,41 @@
 
     /* Hero */
     .hero {
-      position: relative;
-      padding: 160px 0 120px;
+      padding: 170px 0 130px;
       text-align: center;
       background: linear-gradient(180deg, #FFFFFF 0%, #E6F0FF 100%);
+      position: relative;
       overflow: hidden;
     }
-    .hero::before {
-      content: "";
-      position: absolute;
-      top: -50%;
-      left: 0;
-      width: 100%;
-      height: 200%;
-      background: url('https://www.transparenttextures.com/patterns/cubes.png');
-      opacity: 0.05;
-      z-index: -1;
-    }
     .hero h1 {
-      font-weight: 700;
       font-size: 48px;
-      color: #0A285F;
+      font-weight: 700;
     }
     .hero p {
       color: #64748B;
       font-size: 18px;
       max-width: 700px;
-      margin: 20px auto;
+      margin: 15px auto;
     }
 
-    /* Buttons */
     .btn-primary-custom {
       background: linear-gradient(90deg, #0A285F, #2D8CFF);
+      color: white;
       border: none;
       transition: 0.3s;
     }
     .btn-primary-custom:hover {
-      opacity: 0.9;
       transform: scale(1.03);
+      opacity: .95;
     }
 
-    /* Section Titles */
+    /* Sections */
     .section-title {
       font-weight: 700;
       color: #0A285F;
       margin-bottom: 20px;
     }
 
-    /* Services */
-    .services {
-      padding: 100px 0;
-      background-color: #fff;
-    }
     .card {
       border: none;
       border-radius: 15px;
@@ -107,67 +89,39 @@
       transition: transform 0.3s ease;
     }
     .card:hover {
-      transform: translateY(-7px);
-    }
-
-    /* Portfolio */
-    .portfolio {
-      padding: 100px 0;
-      background: #F8FAFC;
-    }
-    .portfolio-item img {
-      border-radius: 10px;
-      width: 100%;
-      height: auto;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.1);
-      transition: transform 0.3s ease;
-    }
-    .portfolio-item img:hover {
-      transform: scale(1.03);
-    }
-
-    /* Contact */
-    .contact {
-      background: #fff;
-      padding: 100px 0;
+      transform: translateY(-5px);
     }
 
     /* Footer */
     footer {
-      background-color: #0A285F;
-      color: #FFFFFF;
+      background: #0A285F;
+      color: white;
       text-align: center;
       padding: 25px 0;
-      position: relative;
-      z-index: 10;
     }
 
-    /* WhatsApp Floating Button */
+    /* WA Floating */
     .whatsapp-float {
       position: fixed;
       bottom: 25px;
       right: 25px;
-      background-color: #25D366;
+      background: #25D366;
       color: white;
       border-radius: 50%;
       width: 60px;
       height: 60px;
       display: flex;
-      align-items: center;
       justify-content: center;
-      box-shadow: 0 3px 10px rgba(0,0,0,0.2);
+      align-items: center;
       font-size: 28px;
+      box-shadow: 0 3px 10px rgba(0,0,0,0.2);
       z-index: 1000;
-      transition: transform 0.3s ease;
+      transition: 0.3s;
     }
     .whatsapp-float:hover {
       transform: scale(1.1);
+      color: #fff;
       text-decoration: none;
-      color: white;
-    }
-
-    [data-aos] {
-      transition: all 0.6s ease;
     }
   </style>
 </head>
@@ -177,15 +131,16 @@
   <!-- Navbar -->
   <nav class="navbar navbar-expand-lg fixed-top bg-white">
     <div class="container">
-      <a class="navbar-brand fw-bold text-primary d-flex align-items-center" href="index.html">
-        <img src="logo.png" alt="Logo Dheatik Solusi" loading="lazy">
-        <span>Dheatik Solusi</span>
+      <a class="navbar-brand fw-bold d-flex align-items-center" href="index.html">
+        <img src="logo.png" alt="Logo Dheatik Solusi">
+        Dheatik Solusi
       </a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarNav">
         <span class="navbar-toggler-icon"></span>
       </button>
+
       <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-        <ul class="navbar-nav align-items-lg-center">
+        <ul class="navbar-nav gap-lg-3">
           <li class="nav-item"><a class="nav-link text-dark" href="index.html">Beranda</a></li>
           <li class="nav-item"><a class="nav-link text-dark" href="layanan.html">Layanan</a></li>
           <li class="nav-item"><a class="nav-link text-dark" href="portofolio.html">Portofolio</a></li>
@@ -196,31 +151,60 @@
     </div>
   </nav>
 
-  <!-- Hero Section -->
+  <!-- HERO -->
   <section class="hero">
-    <div class="container mt-5 pt-5" data-aos="fade-up">
+    <div class="container" data-aos="fade-up">
       <p class="text-secondary mb-2">Partner Terpercaya Transformasi Digital Anda</p>
       <h1>Transformasi Digital<br>Untuk Bisnis Anda</h1>
-      <p>Layanan IT profesional untuk membantu bisnis Anda tumbuh dan berkembang di era digital.</p>
+      <p>Layanan IT profesional untuk membantu bisnis Anda berkembang di era digital.</p>
+
       <div class="d-flex flex-wrap justify-content-center gap-3 mt-4">
-      <a href="layanan.html" class="btn btn-primary-custom px-4">Lihat Layanan</a>
-      <a href="kontak.html" class="btn btn-outline-primary px-4">Hubungi Kami</a>
-      <a href="Katalog%20Dheatik%20Solusi.pdf" class="btn btn-outline-danger px-4" download>
-      <i class="bi bi-file-earmark-pdf-fill me-2"></i> Download Katalog
-    </a>
-</div>
+        <a href="layanan.html" class="btn btn-primary-custom px-4">Lihat Layanan</a>
+        <a href="kontak.html" class="btn btn-outline-primary px-4">Hubungi Kami</a>
+        <a href="Katalog%20Dheatik%20Solusi.pdf" class="btn btn-outline-danger px-4" download>
+          <i class="bi bi-file-earmark-pdf-fill me-2"></i>Download Katalog
+        </a>
+      </div>
     </div>
   </section>
 
+  <!-- BLOG TERBARU -->
+  <section class="py-5" style="background:#F8FAFC;">
+    <div class="container" data-aos="fade-up">
+      <h2 class="section-title text-center">Blog Terbaru</h2>
+      <p class="text-center text-secondary mb-4">Artikel dan informasi menarik tentang dunia teknologi.</p>
 
-  <!-- Footer -->
-  <footer data-aos="fade-in">
-    <p class="mb-0">&copy; 2025 Dheatik Solusi — Solusi IT Profesional Indonesia.</p>
+      <div class="row g-4">
+
+        <!-- 1 -->
+        <div class="col-md-4">
+          <a href="blog/artikel-1.html" class="text-decoration-none text-dark">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="fw-bold">Apa Itu Transformasi Digital untuk UMKM?</h5>
+                <p class="text-secondary">Membahas bagaimana teknologi membantu UMKM menjadi lebih efisien.</p>
+                <span class="text-muted">26 November 2025</span>
+              </div>
+            </div>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="text-center mt-4">
+        <a href="blog/index.html" class="btn btn-primary-custom px-4">Lihat Semua Artikel →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Dheatik Solusi — Solusi IT Profesional Indonesia.</p>
   </footer>
 
-  <!-- Floating WhatsApp -->
-  <a href="https://wa.me/6285210151209?text=Halo%20Dheatik%20Solusi!%20Saya%20ingin%20konsultasi."
-     class="whatsapp-float" target="_blank">
+  <!-- WhatsApp -->
+  <a href="https://wa.me/6285210151209?text=Halo%20Dheatik%20Solusi!"
+     class="whatsapp-float">
     <i class="bi bi-whatsapp"></i>
   </a>
 
@@ -229,8 +213,10 @@
   <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
   <script>
     AOS.init({ duration: 900, once: true });
+
     window.addEventListener('scroll', () => {
-      document.querySelector('.navbar').classList.toggle('scrolled', window.scrollY > 50);
+      document.querySelector('.navbar')
+        .classList.toggle('scrolled', window.scrollY > 50);
     });
   </script>
 
