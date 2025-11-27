@@ -14,7 +14,6 @@
     <!-- Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 
-    <!-- Custom Style -->
     <style>
         body {
             background: #F2F4F8;
@@ -43,49 +42,67 @@
 
         /* Header */
         .page-header {
-            padding: 120px 20px 50px;
+            padding: 130px 20px 40px;
             text-align: center;
         }
         .page-header h1 {
             font-size: 36px;
             font-weight: 700;
-            color: #0A285F;
         }
         .page-header p {
             color: #64748B;
-            margin-top: 10px;
         }
 
-        /* Blog Card */
+        /* Card Thumbnail */
         .blog-card {
             background: white;
             border-radius: 18px;
-            padding: 25px 30px;
             border: 1px solid #e2e8f0;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
             box-shadow: 0 4px 12px rgba(0,0,0,0.06);
-            transition: 0.25s ease;
+            transition: .25s;
         }
         .blog-card:hover {
             transform: translateY(-6px);
-            box-shadow: 0 6px 16px rgba(0,0,0,0.12);
+            box-shadow: 0 7px 18px rgba(0,0,0,0.12);
             border-color: #1E3A8A;
         }
+
+        .blog-thumb {
+            width: 100%;
+            height: 180px;
+            border-radius: 14px;
+            object-fit: cover;
+        }
+
+        @media (min-width: 768px) {
+            .blog-card {
+                flex-direction: row;
+                gap: 24px;
+                padding: 25px;
+            }
+            .blog-thumb {
+                width: 260px;
+                height: 160px;
+            }
+        }
+
         .blog-card h3 a {
             color: #1E3A8A;
-            font-size: 20px;
             font-weight: 700;
             text-decoration: none;
         }
         .blog-card p {
+            margin-top: 8px;
             color: #475569;
-            font-size: 15px;
-            margin-top: 10px;
         }
         .blog-date {
             font-size: 13px;
             color: #6b7280;
-            margin-top: 15px;
-            display: block;
+            margin-top: 12px;
         }
 
         /* Footer */
@@ -93,6 +110,7 @@
             background:#0A285F;
             padding: 20px;
             text-align:center;
+            margin-top: 80px;
         }
         footer p {
             color:white;
@@ -135,14 +153,18 @@
 </section>
 
 <!-- BLOG LIST -->
-<div class="container" style="max-width: 850px; margin-bottom: 100px;">
+<div class="container" style="max-width: 900px; margin-bottom: 100px;">
+
+    <!-- CARD ARTIKEL 1 -->
     <div class="blog-card mb-4">
-        <h3><a href="artikel-1.html">Apa Itu Transformasi Digital untuk UMKM?</a></h3>
-        <p>Memahami bagaimana UMKM bisa berkembang melalui digitalisasi dan automasi sistem modern.</p>
-        <span class="blog-date">Dipublikasikan: 26 November 2025</span>
+        <img src="../assets/img/thumb-transformasi.jpg" class="blog-thumb" alt="Transformasi Digital">
+        <div>
+            <h3><a href="artikel-1.html">Apa Itu Transformasi Digital untuk UMKM?</a></h3>
+            <p>Memahami bagaimana UMKM bisa berkembang melalui digitalisasi dan automasi sistem modern.</p>
+            <span class="blog-date">26 November 2025</span>
+        </div>
     </div>
 
-    <!-- Tambahkan artikel berikutnya di sini -->
 </div>
 
 <!-- FOOTER -->
@@ -150,8 +172,7 @@
     <p>&copy; 2025 Dheatik Solusi — Solusi IT Profesional Indonesia.</p>
 </footer>
 
-<!-- Scripts -->
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://cdn.jsdelivr/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 
 </body>
 </html>
