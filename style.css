@@ -88,3 +88,44 @@ footer {
   text-decoration: none;
   color: white;
 }
+
+/* HEADER PREMIUM */
+.header-premium {
+    position: relative;
+    text-align: center;
+    padding: 140px 20px 100px;
+    background: linear-gradient(160deg, #0A285F 0%, #1E3A8A 40%, #e9eef8 100%);
+    color: white;
+    overflow: hidden;
+}
+
+.header-premium h1 {
+    font-size: 40px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.header-premium p {
+    font-size: 17px;
+    max-width: 720px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+/* Wave Shape */
+.header-wave {
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    .header-premium {
+        padding: 120px 20px 80px;
+    }
+    .header-premium h1 {
+        font-size: 30px;
+    }
+}
+
