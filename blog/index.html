@@ -3,48 +3,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Teknologi — Dheatik Solusi</title>
+    <title>Blog — Dheatik Solusi</title>
     <link rel="stylesheet" href="../style.css">
+
     <style>
         body {
-            background: #f4f6f9;
+            background: #f2f4f8;
             font-family: 'Inter', sans-serif;
         }
 
-        .blog-header {
+        .header {
             text-align: center;
-            margin-top: 120px;
+            margin-top: 80px;
+            margin-bottom: 30px;
         }
 
-        .blog-header h1 {
-            font-size: 2.2rem;
+        .header h1 {
+            font-size: 2.4rem;
             color: #0f172a;
-            font-weight: 700;
         }
 
-        .blog-header p {
+        .header p {
             color: #475569;
-            margin-top: 5px;
         }
 
-        .blog-container {
-            max-width: 950px;
-            margin: 40px auto 100px;
-            padding: 0 20px;
+        /* BLOG GRID SATU KOLOM TAPI LEBIH LEBAR */
+        .blog-list {
+            max-width: 780px;
+            margin: 0 auto;
+            padding: 10px;
         }
 
         .post-card {
             background: #fff;
             padding: 25px 30px;
-            border-radius: 16px;
-            margin-bottom: 30px;
-            border: 1px solid #e2e8f0;
-            box-shadow: 0 3px 12px rgba(0,0,0,0.05);
-            transition: 0.25s ease;
+            border-radius: 14px;
+            margin-bottom: 26px;
+            border: 1px solid #e1e7ef;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+            transition: 0.2s ease-in-out;
         }
 
         .post-card:hover {
-            transform: translateY(-5px);
+            transform: translateY(-4px);
             border-color: #1e3a8a;
             box-shadow: 0 6px 16px rgba(0,0,0,0.08);
         }
@@ -52,7 +53,8 @@
         .post-card h2 a {
             color: #1e3a8a;
             text-decoration: none;
-            font-size: 1.4rem;
+            font-size: 1.35rem;
+            font-weight: 700;
         }
 
         .post-card p {
@@ -65,44 +67,21 @@
             font-size: 0.85rem;
             color: #64748b;
         }
-
-        /* Responsive */
-        @media (max-width: 600px) {
-            .post-card {
-                padding: 20px;
-            }
-            .blog-header h1 {
-                font-size: 1.8rem;
-            }
-        }
     </style>
 </head>
 
 <body>
 
-    <!-- Navbar -->
-    <header style="position: fixed; width: 100%; background: white; top: 0; left: 0; padding: 20px 40px; border-bottom: 1px solid #e2e8f0; z-index: 10;">
-        <nav style="display: flex; gap: 25px; font-weight: 600;">
-            <a href="../index.html">Beranda</a>
-            <a href="../layanan.html">Layanan</a>
-            <a href="../portofolio.html">Portofolio</a>
-            <a href="../tentang.html">Tentang Kami</a>
-            <a href="../kontak.html">Kontak</a>
-            <a href="index.html" style="color: #1e3a8a;">Blog</a>
-        </nav>
-    </header>
-
-    <div class="blog-header">
+    <div class="header">
         <h1>Artikel & Informasi Teknologi</h1>
-        <p>Update seputar teknologi, IT, keamanan, dan digitalisasi bisnis.</p>
+        <p>Kumpulan berita, tips, dan edukasi seputar teknologi & digitalisasi bisnis.</p>
     </div>
 
-    <div class="blog-container">
+    <div class="blog-list">
 
-        <!-- Card Artikel 1 -->
         <div class="post-card">
             <h2><a href="artikel-1.html">Apa Itu Transformasi Digital untuk UMKM?</a></h2>
-            <p>Memahami bagaimana UMKM bisa berkembang melalui digitalisasi dan automasi sistem modern.</p>
+            <p>Memahami bagaimana UMKM berkembang dengan pemanfaatan teknologi dan sistem digital.</p>
             <div class="post-date">Dipublikasikan: 26 November 2025</div>
         </div>
 
