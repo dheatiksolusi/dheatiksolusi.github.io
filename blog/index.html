@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Blog Teknologi — Dheatik Solusi</title>
+  <meta name="description" content="Artikel teknologi, transformasi digital, keamanan, AI, dan pengembangan bisnis dari Dheatik Solusi.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://dheatiksolusi.my.id/blog/">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+
+  <style>
+    body {
+      background: #F2F4F8;
+      font-family: 'Poppins', sans-serif;
+      color: #0A285F;
+    }
+
+    .navbar {
+      padding: 15px 0;
+      background: white;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    }
+
+    .navbar-brand img { height: 42px; margin-right: 8px; }
+    .nav-link { font-weight: 600; margin-right: 20px; }
+    .nav-link:hover { color: #2D8CFF !important; }
+
+    .header-premium {
+      padding: 150px 20px 80px;
+      text-align: center;
+      background: linear-gradient(180deg, #FFFFFF 0%, #EAF2FF 100%);
+      position: relative;
+    }
+
+    .header-premium h1 {
+      font-size: 38px;
+      font-weight: 700;
+    }
+
+    .header-premium p {
+      font-size: 16px;
+      color: #64748B;
+      max-width: 600px;
+      margin: 15px auto 0;
+    }
+
+    .header-wave { margin-top: 40px; }
+
+    .blog-card {
+      background: white;
+      border-radius: 18px;
+      border: 1px solid #e2e8f0;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+      transition: .25s;
+    }
+
+    .blog-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 7px 18px rgba(0,0,0,0.12);
+      border-color: #1E3A8A;
+    }
+
+    .blog-thumb {
+      width: 100%;
+      height: 180px;
+      border-radius: 14px;
+      object-fit: cover;
+    }
+
+    .blog-thumb-generated {
+      width: 100%;
+      height: 180px;
+      border-radius: 14px;
+      flex: 0 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      overflow: hidden;
+      color: white;
+      background:
+        radial-gradient(circle at 18% 20%, rgba(96,165,250,.9), transparent 25%),
+        radial-gradient(circle at 80% 80%, rgba(37,99,235,.8), transparent 30%),
+        linear-gradient(135deg, #0A285F, #1E3A8A);
+    }
+
+    .blog-thumb-generated::before,
+    .blog-thumb-generated::after {
+      content: "";
+      position: absolute;
+      border: 1px solid rgba(255,255,255,.18);
+      border-radius: 50%;
+    }
+
+    .blog-thumb-generated::before {
+      width: 150px;
+      height: 150px;
+      left: -45px;
+      bottom: -65px;
+    }
+
+    .blog-thumb-generated::after {
+      width: 110px;
+      height: 110px;
+      right: -25px;
+      top: -38px;
+    }
+
+    .thumb-content {
+      position: relative;
+      z-index: 2;
+      text-align: center;
+      padding: 20px;
+    }
+
+    .thumb-content i {
+      display: block;
+      font-size: 40px;
+      margin-bottom: 8px;
+    }
+
+    .thumb-content strong {
+      display: block;
+      font-size: 17px;
+      line-height: 1.35;
+    }
+
+    .article-label {
+      display: inline-block;
+      padding: 5px 10px;
+      border-radius: 999px;
+      background: #EAF2FF;
+      color: #1E3A8A;
+      font-size: 12px;
+      font-weight: 600;
+      margin-bottom: 10px;
+    }
+
+    @media (min-width: 768px) {
+      .blog-card {
+        flex-direction: row;
+        padding: 25px;
+      }
+
+      .blog-thumb,
+      .blog-thumb-generated {
+        width: 260px;
+        height: 160px;
+      }
+    }
+
+    .blog-card h3 a {
+      color: #1E3A8A;
+      font-weight: 700;
+      text-decoration: none;
+    }
+
+    .blog-card p { margin-top: 8px; color: #475569; }
+    .blog-date { font-size: 13px; color: #6b7280; margin-top: 10px; display: inline-block; }
+
+    footer {
+      background: #0A285F;
+      padding: 20px;
+      text-align: center;
+      margin-top: 80px;
+    }
+
+    footer p { color: white; margin: 0; }
+  </style>
+</head>
+
+<body>
+<nav class="navbar navbar-expand-lg fixed-top">
+  <div class="container">
+    <a class="navbar-brand fw-bold d-flex align-items-center" href="../index.html">
+      <img src="../logo.png" alt="Logo Dheatik Solusi">
+      Dheatik Solusi
+    </a>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Buka navigasi">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav align-items-lg-center">
+        <li class="nav-item"><a href="../index.html" class="nav-link text-dark">Beranda</a></li>
+        <li class="nav-item"><a href="../layanan.html" class="nav-link text-dark">Layanan</a></li>
+        <li class="nav-item"><a href="../portofolio.html" class="nav-link text-dark">Portofolio</a></li>
+        <li class="nav-item"><a href="../tentang.html" class="nav-link text-dark">Tentang Kami</a></li>
+        <li class="nav-item"><a href="../kontak.html" class="nav-link text-dark">Kontak</a></li>
+        <li class="nav-item"><a href="index.html" class="nav-link text-primary fw-bold">Blog</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<section class="header-premium">
+  <h1>Artikel &amp; Informasi Teknologi</h1>
+  <p>Update seputar teknologi, IT, keamanan, dan digitalisasi bisnis untuk mendukung perkembangan bisnis Anda.</p>
+
+  <svg class="header-wave" viewBox="0 0 1440 320" aria-hidden="true">
+    <path fill="#F2F4F8"
+      d="M0,224L48,218.7C96,213,192,203,288,186.7C384,171,480,149,576,149.3C672,149,768,171,864,170.7C960,171,1056,149,1152,144C1248,139,1344,149,1392,154.7L1440,160L1440,320L0,320Z">
+    </path>
+  </svg>
+</section>
+
+<main class="container" style="max-width: 900px; margin-bottom: 100px;">
+  <article class="blog-card mb-4">
+    <a href="transformasi-digital-umkm-temanlaris-ai.html" aria-label="Baca artikel TemanLaris AI">
+      <img src="../assets/img/temanlaris-ai-logo.png"
+           class="blog-thumb"
+           alt="Logo TemanLaris AI untuk transformasi digital UMKM"
+           loading="lazy"
+           style="object-fit: contain; background: linear-gradient(135deg, #F0FDF4, #EAF2FF); padding: 18px;">
+    </a>
+
+    <div>
+      <span class="article-label">Blog Review Competition 2026</span>
+      <h3>
+        <a href="transformasi-digital-umkm-temanlaris-ai.html">
+          Dari Catatan Manual ke TemanLaris AI: Perjalanan Transformasi Digital UMKM
+        </a>
+      </h3>
+      <p>
+        Kisah membangun solusi untuk membantu UMKM mencatat transaksi, memantau stok,
+        memahami data usaha, dan menyiapkan promosi berbantuan AI.
+      </p>
+      <span class="blog-date">Dipublikasikan: 14 Juli 2026</span>
+    </div>
+  </article>
+
+  <article class="blog-card mb-4">
+    <img src="../assets/img/thumb-transformasi.jpg" class="blog-thumb" alt="Transformasi Digital">
+    <div>
+      <h3><a href="artikel-1.html">Apa Itu Transformasi Digital untuk UMKM?</a></h3>
+      <p>Memahami bagaimana UMKM bisa berkembang melalui digitalisasi dan automasi sistem modern.</p>
+      <span class="blog-date">Dipublikasikan: 26 November 2025</span>
+    </div>
+  </article>
+
+  <article class="blog-card mb-4">
+    <img src="../assets/img/thumb-ai-energy.jpg" class="blog-thumb" alt="AI dan Energi Dunia">
+    <div>
+      <h3><a href="artikel-2.html">Dari Data Center Hingga Nuklir, Teknologi Mengubah Dunia Energi?</a></h3>
+      <p>Lonjakan AI global mendorong industri energi berinovasi dari nuklir modular hingga infrastruktur listrik baru.</p>
+      <span class="blog-date">Dipublikasikan: 27 November 2025</span>
+    </div>
+  </article>
+</main>
+
+<footer>
+  <p>&copy; 2026 Dheatik Solusi — Solusi IT Profesional Indonesia.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
